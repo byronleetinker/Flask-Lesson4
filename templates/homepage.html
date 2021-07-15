@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Learning Templates</title>
+</head>
+<body style="background-color:pink">
+<p><img src="{{url_for('static', filename='me.jpeg')}}" /></p>
+<h1>Hi {{name}}, How are you finding Flask sessions? </h1>
+
+{%if name=='Byron':%}
+<p>You're the admin</p>
+{%else%}
+<p>You're a normal user</p>
+{%endif %}
+</body>
+</html>
